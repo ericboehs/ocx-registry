@@ -1,0 +1,128 @@
+{
+	"$schema": "https://ocx.kdco.dev/schemas/registry.json",
+	"name": "Ericboehs",
+	"namespace": "ericboehs",
+	"version": "0.1.0",
+	"author": "Eric Boehs",
+
+	"opencode": "1.0.0",
+	"ocx": "1.0.16",
+
+	"components": [
+		// Apple Calendar
+		{
+			"name": "calendar",
+			"type": "ocx:skill",
+			"description": "Manage Apple Calendar using ical CLI — view, create, update, delete, search events",
+			"files": ["skills/calendar/SKILL.md"]
+		},
+		{
+			"name": "setup-calendar",
+			"type": "ocx:skill",
+			"description": "Install and configure the ical CLI for Apple Calendar management",
+			"files": ["skills/setup-calendar/SKILL.md"]
+		},
+
+		// Apple Reminders
+		{
+			"name": "reminders",
+			"type": "ocx:skill",
+			"description": "Manage Apple Reminders using remindctl CLI — list, create, complete, edit, delete",
+			"files": ["skills/reminders/SKILL.md"]
+		},
+
+		// Slack
+		{
+			"name": "slack",
+			"type": "ocx:skill",
+			"description": "Manage Slack using slk CLI — read messages, search, check unread, set status/DND",
+			"files": ["skills/slack/SKILL.md"]
+		},
+		{
+			"name": "setup-slack",
+			"type": "ocx:skill",
+			"description": "Install and configure slk CLI for Slack access",
+			"files": ["skills/setup-slack/SKILL.md"]
+		},
+
+		// CLI Email
+		{
+			"name": "check-email",
+			"type": "ocx:skill",
+			"description": "Check and manage email using himalaya CLI",
+			"files": ["skills/check-email/SKILL.md"]
+		},
+		{
+			"name": "setup-email",
+			"type": "ocx:skill",
+			"description": "Install and configure CLI email stack (mbsync, himalaya, neomutt)",
+			"files": [
+				"skills/setup-email/SKILL.md",
+				"skills/setup-email/references/blog-post.md"
+			]
+		},
+
+		// Git Utils
+		{
+			"name": "commit-and-push",
+			"type": "ocx:skill",
+			"description": "Stage, commit, and push changes to origin",
+			"files": ["skills/commit-and-push/SKILL.md"]
+		},
+		{
+			"name": "merge-and-cleanup",
+			"type": "ocx:skill",
+			"description": "Merge current branch PR (squash), delete branch, switch to default, pull",
+			"files": ["skills/merge-and-cleanup/SKILL.md"]
+		},
+
+		// Code Lint
+		{
+			"name": "lint",
+			"type": "ocx:skill",
+			"description": "Run all configured linters across the full project",
+			"files": ["skills/lint/SKILL.md"]
+		},
+		{
+			"name": "setup-lint",
+			"type": "ocx:skill",
+			"description": "Configure per-project linting — detect languages, interview user, write config",
+			"files": ["skills/setup-lint/SKILL.md"]
+		},
+
+		// Gist
+		{
+			"name": "gist-create",
+			"type": "ocx:skill",
+			"description": "Create a GitHub Gist from a file path",
+			"files": ["skills/gist-create/SKILL.md"]
+		},
+		{
+			"name": "gist-update",
+			"type": "ocx:skill",
+			"description": "Update an existing GitHub Gist from a local file",
+			"files": ["skills/gist-update/SKILL.md"]
+		},
+
+		// iCloud Downloads
+		{
+			"name": "copy-to-icloud-downloads",
+			"type": "ocx:skill",
+			"description": "Copy files to iCloud Downloads for reading on iPhone/iPad",
+			"files": ["skills/copy-to-icloud-downloads/SKILL.md"]
+		},
+
+		// Session Improver
+		{
+			"name": "improve-session",
+			"type": "ocx:skill",
+			"description": "Analyze a Claude Code session and recommend improvements to reduce token waste",
+			"files": [
+				"skills/improve-session/SKILL.md",
+				"skills/improve-session/references/analyzers.md",
+				"skills/improve-session/references/fix-templates.md",
+				"skills/improve-session/references/ruby-linter-patterns.md"
+			]
+		}
+	]
+}
